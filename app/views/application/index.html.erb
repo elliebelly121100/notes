@@ -1,0 +1,8 @@
+<div class="page-header">
+  <h1>This is the index page!<small> From here you can view all files saved.</small></h1>
+</div>
+<ul>
+<% @idea.each do |idea| %>
+  <a href="/idea/<%= idea.id %>"<li><%= idea.title %></li></a>
+<% end %>
+</ul>
